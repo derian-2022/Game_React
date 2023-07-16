@@ -1,0 +1,31 @@
+{
+  "short_name": "React App",
+  "name": "My Awesome React App",
+  "description": "An amazing app built with React",
+  "icons": [
+    {
+      "src": "icon-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#FF0000",
+  "background_color": "#FFFFFF",
+  "author": "Your Name",
+  "version": "1.0",
+  "homepage_url": "https://www.example.com",
+  "scope": "/",
+  "categories": ["Utility", "Productivity"]
+}

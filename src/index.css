@@ -1,0 +1,122 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+code {
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes buttonFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+button {
+  position: relative;
+  animation: buttonFadeIn 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: rgba(8, 13, 250, 0.279);
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+button:hover::after {
+  opacity: 1;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
+}
+
+.score-text {
+  margin-bottom: 5px;
+  animation: slideInUp 0.5s ease-in-out, changeColor 3s infinite;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.container {
+  animation: slideInDown 0.5s ease-in-out;
+}
